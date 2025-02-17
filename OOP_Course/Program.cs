@@ -21,9 +21,11 @@ namespace OOPCourse
             */
 
             // Exeption Handling
-            Exeption_Handle.Exception_Handling eh = new Exeption_Handle.Exception_Handling();
+            /*
+             Exeption_Handle.Exception_Handling eh = new Exeption_Handle.Exception_Handling();
             eh.PrintDivid(10, 0);
             eh.Arr();
+            */
 
             Console.ReadKey();
         }
