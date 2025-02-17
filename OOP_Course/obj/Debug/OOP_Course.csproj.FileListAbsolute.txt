@@ -1,0 +1,7 @@
+F:\New folder (2)\Course.C#\app2\OOP_Course\OOP_Course\bin\Debug\OOP_Course.exe.config
+F:\New folder (2)\Course.C#\app2\OOP_Course\OOP_Course\bin\Debug\OOP_Course.exe
+F:\New folder (2)\Course.C#\app2\OOP_Course\OOP_Course\bin\Debug\OOP_Course.pdb
+F:\New folder (2)\Course.C#\app2\OOP_Course\OOP_Course\obj\Debug\OOP_Course.csproj.AssemblyReference.cache
+F:\New folder (2)\Course.C#\app2\OOP_Course\OOP_Course\obj\Debug\OOP_Course.csproj.CoreCompileInputs.cache
+F:\New folder (2)\Course.C#\app2\OOP_Course\OOP_Course\obj\Debug\OOP_Course.exe
+F:\New folder (2)\Course.C#\app2\OOP_Course\OOP_Course\obj\Debug\OOP_Course.pdb
