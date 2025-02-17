@@ -29,5 +29,17 @@ namespace OOPCourse.Exeption_Handle
                 Console.WriteLine(ex.Message);
             }
         }
+
+        public void MultibleCatch()
+        {
+            try
+            {
+                int i = int.Parse("ABC");
+            }
+            catch(Exception ex) when (ex is FormatException || ex is OverflowException)
+            {
+                Console.WriteLine(ex.Message);
+            } 
+        }
     }
 }
