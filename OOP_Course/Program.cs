@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OOP_Course.Smart_Home_Control;
+using System;
 
 namespace OOPCourse
 {
@@ -6,26 +7,26 @@ namespace OOPCourse
     {
         static void Main(string[] args)
         {
-            // Bank Account
-            /*
-            Bank_Account.BankAccount customer1 = new Bank_Account.BankAccount("Samir Fawzy",21,"Shebin",1,"0123456789");
+            SmartAC myAC = new SmartAC("Smart AC");
+            myAC.TurnOn();
+            myAC.SetTemperature(25);
+            myAC.Operate();
+            myAC.TurnOff();
 
-            customer1.DisplayAccountData();
-            Console.WriteLine("***************************************");
+            Console.WriteLine("==========================");
 
-            customer1.ModifyData("ahmed fawzy", 31, "Cairo", 2, "24879287");
-            Console.WriteLine("***************************************");
+            SmartTV myTV = new SmartTV("Smart TV");
+            myTV.TurnOn();
+            myTV.Operate();
+            myTV.TurnOff();
 
-            customer1.DisplayAccountData();
-            Console.WriteLine("End Programe");
-            */
+            Console.WriteLine("==========================");
 
-            // Exeption Handling
-            /*
-             Exeption_Handle.Exception_Handling eh = new Exeption_Handle.Exception_Handling();
-            eh.PrintDivid(10, 0);
-            eh.Arr();
-            */
+            SmartLight myLight = new SmartLight("Smart Light");
+            myLight.TurnOn();
+            myLight.Operate();
+            myLight.TurnOff();
+
 
             Console.ReadKey();
         }

@@ -45,8 +45,13 @@
   <ItemGroup>
     <Compile Include="Bank_Account\BankAccount.cs" />
     <Compile Include="Exeption_Handling\Exception_Handling.cs" />
+    <Compile Include="Linear_System_\LinearSystem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Smart_Home_Control\SmartAC.cs" />
+    <Compile Include="Smart_Home_Control\SmartDivices.cs" />
+    <Compile Include="Smart_Home_Control\SmartLight.cs" />
+    <Compile Include="Smart_Home_Control\SmartTV.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
