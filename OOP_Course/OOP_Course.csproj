@@ -44,8 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bank_Account\BankAccount.cs" />
+    <Compile Include="Event_Management_Sytstem\Concert.cs" />
+    <Compile Include="Event_Management_Sytstem\Events.cs" />
+    <Compile Include="Event_Management_Sytstem\IBookable.cs" />
     <Compile Include="Exeption_Handling\Exception_Handling.cs" />
     <Compile Include="Linear_System_\LinearSystem.cs" />
+    <Compile Include="MyArray.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Smart_Home_Control\SmartAC.cs" />
