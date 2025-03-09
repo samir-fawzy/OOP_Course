@@ -44,12 +44,38 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bank_Account\BankAccount.cs" />
+    <Compile Include="Beverage_System\BeverageDecorator.cs" />
+    <Compile Include="Beverage_System\CaramelDecorator.cs" />
+    <Compile Include="Beverage_System\Coffe.cs" />
+    <Compile Include="Beverage_System\IBeverage.cs" />
+    <Compile Include="Beverage_System\MilkDecorator.cs" />
+    <Compile Include="Beverage_System\SugarDecorator.cs" />
+    <Compile Include="Beverage_System\Tea.cs" />
+    <Compile Include="Beverage_System\WhippedCreamDecorator.cs" />
     <Compile Include="Event_Management_Sytstem\Concert.cs" />
     <Compile Include="Event_Management_Sytstem\Events.cs" />
     <Compile Include="Event_Management_Sytstem\IBookable.cs" />
     <Compile Include="Exeption_Handling\Exception_Handling.cs" />
+    <Compile Include="Flight_Booking_System\BusinessFight.cs" />
+    <Compile Include="Flight_Booking_System\EconomyFight.cs" />
+    <Compile Include="Flight_Booking_System\Fight.cs" />
     <Compile Include="Linear_System_\LinearSystem.cs" />
     <Compile Include="MyArray.cs" />
+    <Compile Include="Notification_System\Customer.cs" />
+    <Compile Include="Notification_System\IObserver.cs" />
+    <Compile Include="Notification_System\ISubject.cs" />
+    <Compile Include="Notification_System\Order.cs" />
+    <Compile Include="Payment_System\BitCoinPayment.cs" />
+    <Compile Include="Payment_System\CreditCardPayment.cs" />
+    <Compile Include="Payment_System\IPaymentStrategy.cs" />
+    <Compile Include="Payment_System\PaypalPayment.cs" />
+    <Compile Include="Payment_System\ShoppingCart.cs" />
+    <Compile Include="Pizza_Customization_System\CheeseDecorator.cs" />
+    <Compile Include="Pizza_Customization_System\IPizza.cs" />
+    <Compile Include="Pizza_Customization_System\MargheritaPizza.cs" />
+    <Compile Include="Pizza_Customization_System\OlivesDecorator.cs" />
+    <Compile Include="Pizza_Customization_System\PepperoniDecorator.cs" />
+    <Compile Include="Pizza_Customization_System\PizzaDecorator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Smart_Home_Control\SmartAC.cs" />
@@ -59,7 +85,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="bin\Debug\OOP_Course.exe.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="bin\Debug\OOP_Course.exe" />
+    <Content Include="bin\Debug\OOP_Course.pdb" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

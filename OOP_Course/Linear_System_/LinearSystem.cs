@@ -5,36 +5,41 @@ namespace OOP_Course.Linear_System_
     internal class LinearSystem : MyArray
     {
 
+
         public LinearSystem() 
         {
-            Console.WriteLine("===================== Note =====================");
-            Console.WriteLine("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-            Console.WriteLine("NOTE : after equal consider column add to matrix");
-            Console.WriteLine("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-            Console.WriteLine("=================================================");
+            Console.WriteLine("============================= Note =============================");
+            Console.WriteLine("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+            Console.WriteLine("!!NOTE : The value after the equal sign is considered a column.!");
+            Console.WriteLine("!!!!!!!!!!!!!!!!!!!!! Add it to matrix !!!!!!!!!!!!!!!!!!!!!!!!!");
+            Console.WriteLine("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+            Console.WriteLine("================================================================");
             Console.WriteLine();
 
             double[,] matrix;
 
             matrix = CreateArray();
 
+            int Rows = matrix.GetLength(0);
+
             if (matrix.GetLength(0) == matrix.GetLength(1) - 1)
             {
 
-                double[,] results = new double[3, 0];
+                double[,] results;
 
                 results = SolveSystem(matrix);
 
-                double x = results[0, 0];
-                double y = results[1, 0];
-                double z = results[2, 0];
                 Console.WriteLine("=========== System Solved ===========");
-                Console.WriteLine("Results : ");
-                Console.WriteLine($"X : {x}");
-                Console.WriteLine($"Y : {y}");
-                Console.WriteLine($"Z : {z}");
-                Console.WriteLine("============ End ============");
-
+                Console.Write("Results : ");
+                for(int i = 0;i < 1;i++)
+                {
+                    for(int j = 0;j < Rows;j++)
+                    {
+                        Console.Write(results[j,i] + "  ");
+                    }
+                }
+                Console.WriteLine() ;
+                Console.WriteLine("================ End =================");
             }
             else
                 Console.WriteLine("......Invalid!......\nThe matrix must be square..!");
@@ -51,7 +56,7 @@ namespace OOP_Course.Linear_System_
 
 
             double[,] equals = new double[rows, 1]; // 3x1
-
+          
             HigherMatrix(matrix);
 
             for (int i = 0; i < rows; i++)
@@ -79,7 +84,6 @@ namespace OOP_Course.Linear_System_
                 results[j, 0] += equals[j, 0];
                 results[j, 0] /= newMatrix[j, j];
             }
-
             return results;
         }
     }
