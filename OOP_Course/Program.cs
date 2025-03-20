@@ -7,14 +7,27 @@ using OOP_Course.Flight_Booking_System;
 using OOP_Course.Notification_System;
 using OOP_Course.Payment_System;
 using OOP_Course.Pizza_Customization_System;
+using OOP_Course.Exeption_Handling;
+using OOP_Course.Delegates;
+using OOP_Course.Student_System;
+using System.ComponentModel;
+using System.Reflection;
+using System.Security.Policy;
+using System.Threading.Tasks;
+using OOP_Course.MobilePhone;
 
 
 namespace OOPCourse
 {
     internal class Program
     {
+        delegate void Operation(int a, int b);
+        delegate bool AuthenticationDelegate(string username, string password);
+        delegate void AuthenticationNotify(string message);
         static void Main(string[] args)
         {
+            #region Implementaion
+
             #region Flight Booking System
             //Fight f = new Fight("1", "2", 100);
             //f.Main01();
@@ -90,9 +103,113 @@ namespace OOPCourse
             //Console.WriteLine($"{mypizza.GetCost()} - {mypizza.GetDescription()}");
             #endregion
 
+            #region Exeption Handling
+            //try
+            //{
+            //    Console.Write("Enter your email: ");
+            //    string email = Console.ReadLine();
+            //    EmailValidator.ValidateEmail(email);
+            //}
+            //catch(InvalidMailExecption ex)
+            //{
+            //    Console.WriteLine("Error : " + ex.Message);
+            //}
+
+            //try
+            //{
+            //    Console.Write("Enter a positive number: ");
+            //    double number = double.Parse(Console.ReadLine());
+            //    PositiveNumberValidator.ValidatePositiveNumber(number);
+            //}
+            //catch(NotPositiveNumber ex)
+            //{
+            //    Console.WriteLine("Error : " + ex.Message);
+            //}
+
+            //try
+            //{
+            //    Console.Write("Enter your age: ");
+            //    int age = int.Parse(Console.ReadLine());
+            //    //AgeValidator.ValidateAge(age);
+            //    if (age < 18 || age > 60)
+            //    {
+            //        throw new InvalidAgeException(age.ToString());
+            //    }
+            //    Console.WriteLine("Age is valid");
+            //}
+            //catch(InvalidAgeException ex)
+            //{
+            //    Console.WriteLine("Error : " + ex.Message);
+            //}
+
+            #endregion
+
+            #region Delegate
+            //Console.WriteLine("Enter choice: 1 - add , 2 - multiply ");
+            //Console.Write("Choice: ");
+            //string choice = Console.ReadLine();
+
+            //Operation op;
+
+            //if (choice == "1")
+            //{
+            //    op = Add;
+            //}
+            //else if (choice == "2")
+            //{
+            //    op = Multiply;
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Invalid choice");
+            //    return;
+            //}
+            //op(10, 20);
+
+            //string username = "admin";
+            //string password = "admin";
+
+            //AuthenticationDelegate auth = AuthenticationService.AuthenticateUser;
+            //AuthenticationNotify notify = NotificatoinService.SendEmail;
+            //notify += NotificatoinService.LogToFile;
+            //if (auth(username, password))
+            //{
+            //    notify("User authenticated successfully");
+            //}
+            //else
+            //{
+            //    notify("User authentication failed");
+            //}
+            #endregion
+
+            #region Student System
+            //StudentTest.CreateStudent();
+
+            //foreach (var student in StudentTest.Students)
+            //{
+            //    student.DisplayStudentInfo();
+            //}
+            //Console.WriteLine($"Total students : {Student.studentCount}");
+            #endregion
+
+            #region Mobile Phone
+            //MobilePhone NokiaN95 = new MobilePhone("Nokia N95", "Nokia", "John Doe", 1000, new Battery { Model = "N95", IdleTime = 100, HoursTalk = 10, Type = BatteryType.LiIon }, new Screen { Size = "5", Colors = "256" });
+
+            //MobilePhone OppoA9 = new MobilePhone("Oppo A9", "Oppo", "Ahmed", 2000, new Battery { Model = "A9", IdleTime = 200, HoursTalk = 20, Type = BatteryType.NiMH }, new Screen { Size = "6", Colors = "16M" });
+
+            //Console.WriteLine(NokiaN95);
+            //Console.WriteLine();
+            //Console.WriteLine(OppoA9);
+            #endregion
+            #endregion
+
+
             Console.WriteLine("Press any key to exist");
             Console.ReadKey();
         }
 
+        static void Add(int a,int b) => Console.WriteLine($"Result : {a + b}");
+        static void Multiply(int a,int b) => Console.WriteLine($"Result : {a * b}");
     }
+
 }

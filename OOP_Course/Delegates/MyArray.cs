@@ -68,7 +68,7 @@ namespace OOP_Course
             double detrimin = matrix[0,0] * matrix[1,1] - matrix[0,1] * matrix[1,0];
             return detrimin;
         }
-
+        ////////////////// Error !! ///////////////////
         //public double[,] adjoint(double[,] matrix)
         //{
         //    int rows = matrix.GetLength(0);
